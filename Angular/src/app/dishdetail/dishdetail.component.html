@@ -13,8 +13,7 @@
     </div>
   </div>
 
-  <div fxFlex="40">
-    <div fxFlex *ngIf="dish">
+  <div fxFlex="40" *ngIf="dish" [@visibility]="visibility">
         <mat-card>
             <mat-card-header>
             <mat-card-title>
@@ -35,15 +34,13 @@
               <button mat-button [routerLink]="['/dishdetail', next]"><span class="fa fa-chevron-right fa-lg"></span></button>
             </mat-card-actions>
         </mat-card>
-    </div>
   </div>
 
   <div [hidden]="dish">
     <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
   </div>
 
-  <div fxFlex="40">
-    <div fxFlex *ngIf="dish">
+  <div fxFlex="40" *ngIf="dish" [@visibility]="visibility">
       <mat-card>
         <mat-card-header>
           <mat-card-title>
@@ -96,7 +93,6 @@
       <mat-spinner></mat-spinner>
       <h4>Loading . . . Please Wait</h4>
     </div> -->
-  </div>
 
 </div>
 

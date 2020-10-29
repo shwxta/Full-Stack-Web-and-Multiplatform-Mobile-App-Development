@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Dish } from '../shared/dish';
-import { DISHES } from '../shared/dishes';
 import { Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { delay } from 'rxjs/operators';

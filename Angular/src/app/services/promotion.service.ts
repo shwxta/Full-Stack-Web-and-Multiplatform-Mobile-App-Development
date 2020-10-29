@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Promotion } from '../shared/promotion';
-import { PROMOTIONS } from '../shared/promotions';
 import { Observable, of } from 'rxjs';
 import {delay , map} from 'rxjs/operators';
 import {Leader} from '../shared/leader';
